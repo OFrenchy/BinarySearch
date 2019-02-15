@@ -10,15 +10,24 @@ namespace BinarySearch
     {
         static void Main(string[] args)
         {
-            List<int> list = new List<int>() { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+            //List<int> list = new List<int>() { 7, 6, 5, 9, 8, 4, 3, 2, 1 };  //{ 7, 6, 5, 9, 8, 4, 3, 2, 1, 22,19,500,456,2, };
+            List<int> list = new List<int>() { 7, 6, 5, 9, 8, 100, 4, 3, 2, 1, 22, 19, 500, 456, 2, };
 
             BinarySearch binarySearch = new BinarySearch(list);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine( binarySearch.Search(9) );
+
+            Console.WriteLine(binarySearch.Search(11)); // not found
+            binarySearch.Add(11);
+            Console.WriteLine(binarySearch.Search(11)); // found
+
+            Console.WriteLine(binarySearch.Search(9));
+
+
+
+            Console.ReadLine();
             
-            Console.WriteLine(  binarySearch.ToString()  );
-
-
-
-            Console.WriteLine("Hello World!");
         }
     }
 }
