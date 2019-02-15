@@ -29,7 +29,7 @@ namespace BinarySearch
             // Start at the base, searching less than/greater than & if null
             Node thisBase = baseNode;
             bool placedNode = false;
-            Console.WriteLine("base " + baseNode.Value);
+            Console.WriteLine("base " + baseNode.Value + "; adding " + intToAdd);
 
             do
             {
@@ -44,7 +44,7 @@ namespace BinarySearch
                     else
                     {
                         thisBase = thisBase.LeftNode;
-                        Console.WriteLine("base " + thisBase.Value + " left");
+                        Console.WriteLine("base " + thisBase.Value + "; left");
                     }
                 }
                 else
@@ -58,7 +58,7 @@ namespace BinarySearch
                     else
                     {
                         thisBase = thisBase.RightNode;
-                        Console.WriteLine("base " + thisBase.Value + " right");
+                        Console.WriteLine("base " + thisBase.Value + "; right");
                     }
                 }
             }
@@ -69,27 +69,36 @@ namespace BinarySearch
         {
             // Start at the base, searching less than/greater than & if null
             Node thisBase = baseNode;
-            Console.WriteLine("base " + baseNode.Value);
             Node foundNode = null;
-            string path = "Base " + baseNode.Value + "; ";
+
+            Console.WriteLine("Search for " + searchValue);
+            Console.WriteLine("Base " + baseNode.Value);
 
             do
             {
+                // the value we are searching for might not be in the tree; 
+                // if so, both left & right are null
+
                 if (searchValue == thisBase.Value)
                 {
-                    path = path + baseNode.Value + " left; ";
+                    Console.WriteLine("Found " + thisBase.Value);
                     foundNode = thisBase;
+                }
+                else if (thisBase.LeftNode == null && thisBase.RightNode == null)
+                {
+                    Console.WriteLine(searchValue + " not found ");
+                    return null;
                 }
                 else
                 {
                     if (searchValue < thisBase.Value)
                     {
-                        path = path + baseNode.Value + " left; ";
+                        Console.WriteLine("Left to " + thisBase.LeftNode.Value);
                         thisBase = thisBase.LeftNode;
                     }
                     else
                     {
-                        path = path + baseNode.Value + " right; ";
+                        Console.WriteLine("Right to " + thisBase.RightNode.Value);
                         thisBase = thisBase.RightNode;
                     }
                 }
