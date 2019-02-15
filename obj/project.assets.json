@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\devCodeCamp\\Assignments\\Wk_06_Day_4_C_BinarySearchTree\\BinarySearch\\BinarySearch\\BinarySearch\\BinarySearch.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\devCodeCamp\\Assignments\\Wk_06_Day_4_C_BinarySearchTree\\BinarySearch\\BinarySearch.csproj",
       "projectName": "BinarySearch",
-      "projectPath": "\\\\Mac\\Home\\Documents\\devCodeCamp\\Assignments\\Wk_06_Day_4_C_BinarySearchTree\\BinarySearch\\BinarySearch\\BinarySearch\\BinarySearch.csproj",
+      "projectPath": "\\\\Mac\\Home\\Documents\\devCodeCamp\\Assignments\\Wk_06_Day_4_C_BinarySearchTree\\BinarySearch\\BinarySearch.csproj",
       "packagesPath": "C:\\Users\\deanbourgeois\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\devCodeCamp\\Assignments\\Wk_06_Day_4_C_BinarySearchTree\\BinarySearch\\BinarySearch\\BinarySearch\\obj\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\devCodeCamp\\Assignments\\Wk_06_Day_4_C_BinarySearchTree\\BinarySearch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

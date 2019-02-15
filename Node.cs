@@ -13,12 +13,12 @@ namespace BinarySearch
         Node rightNode;
 
         // Constructor
-        public Node(int value, Node baseNode, Node leftNode = null, Node rightNode = null)
+        public Node(int value)      //, Node leftNode = null, Node rightNode = null)
         {
             this.value = value;
-            this.baseNode = baseNode;
-            if (leftNode != null) this.leftNode = leftNode;
-            if (rightNode != null) this.rightNode = rightNode;
+            //this.baseNode = baseNode;
+            //if (leftNode != null) this.leftNode = leftNode;
+            //if (rightNode != null) this.rightNode = rightNode;
         }
         // Member methods - … Can Do …
 
@@ -43,5 +43,21 @@ namespace BinarySearch
 
         }
 
+        public Node LeftNode
+        {
+            get => leftNode;
+            set
+            {
+                if (leftNode == null) leftNode = value;
+            }
+        }
+        public Node RightNode
+        {
+            get => rightNode;
+            set
+            {
+                if (rightNode == null) rightNode = value;
+            }
+        }
     }
 }

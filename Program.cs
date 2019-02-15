@@ -12,9 +12,9 @@ namespace BinarySearch
         {
             List<int> list = new List<int>() { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
 
-
-
-
+            BinarySearch binarySearch = new BinarySearch(list);
+            
+            Console.WriteLine(  binarySearch.ToString()  );
 
 
 
